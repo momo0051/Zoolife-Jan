@@ -73,6 +73,10 @@ class AdDetailViewController: UIViewController {
     @IBOutlet weak var vaccineDetailsValueLabel: UILabel!
     @IBOutlet weak var passportHeadingLabel: UILabel!
     @IBOutlet weak var passportValueLabel: UILabel!
+    @IBOutlet weak var specificationHeadingLabel: UILabel!
+    @IBOutlet weak var descriptionHeadingLabel: UILabel!
+    
+    
     @IBOutlet weak var infoBackgroundView: UIView! {
         didSet {
             infoBackgroundView.backgroundColor = UIColor.white
@@ -152,6 +156,8 @@ class AdDetailViewController: UIViewController {
                 noCommentsLabel.localizeKey = "No Comments Available"
                 commentBox.textAlignment = .left
                 alertMessageLabel.localizeKey = "\"Zoolife\" warns against dealing outside the application and strongly advises to deal through private messages only, to deal hand in hand, to beware of agents, and to make sure that the bank account belongs to the same person who owns the goods."
+                specificationHeadingLabel.localizeKey = "Specifications"
+                descriptionHeadingLabel.localizeKey = "Description"
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
             } else {
                 lblWriteComment.localizeKey = "التعليقات"
@@ -162,6 +168,8 @@ class AdDetailViewController: UIViewController {
                 lblShare.localizeKey = "مشاركة"
                 commentBox.textAlignment = .right
                 alertMessageLabel.localizeKey = "يحذر \" زوولايف \" من التعامل خارج التطبيق وينصح بشدة بالتعامل عبر الرسائل الخاصة فقط والتعامل يد بيد والحذر من الوسطاء والتأكد أن الحساب البنكي يعود لنفس الشخص صاحب السلعة ."
+                specificationHeadingLabel.localizeKey = "المواصفات"
+                descriptionHeadingLabel.localizeKey = "الوصف"
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
             }
         } else {
@@ -611,13 +619,43 @@ class AdDetailViewController: UIViewController {
             self.totalLikesLabel.text = totalLikes + ""
         }
         if let sex = post?.sex{
-            self.sexValueLabel.text = sex
+            
+            if sex.lowercased() == "female" {
+                if appLanguage == "en" {
+                    self.sexValueLabel.text = "Female"
+                }
+                else{
+                    self.sexValueLabel.text = "انثى"
+                }
+            }else{
+                if appLanguage == "en" {
+                    self.sexValueLabel.text = "Male"
+                }
+                else{
+                    self.sexValueLabel.text = "ذكر"
+                }
+            }
         }
         if let age = post?.age{
             self.ageValueLabel.text = "\(age)"
         }
         if let passport = post?.passport{
-            self.passportValueLabel.text = passport
+            
+            if passport.lowercased() == "yes" {
+                if appLanguage == "en" {
+                    self.passportValueLabel.text = "Yes"
+                }
+                else{
+                    self.passportValueLabel.text = "نعم"
+                }
+            }else{
+                if appLanguage == "en" {
+                    self.passportValueLabel.text = "No"
+                }
+                else{
+                    self.passportValueLabel.text = "لا"
+                }
+            }
         }
         if let vaccineDetails = post?.vaccine_detail{
             self.vaccineDetailsValueLabel.text = vaccineDetails

@@ -26,6 +26,7 @@
                 <outlet property="commentBox" destination="4li-ke-pDQ" id="2a5-c1-x5o"/>
                 <outlet property="commentTableView" destination="gLR-yR-HDF" id="vBU-fA-cbj"/>
                 <outlet property="commetTableViewHeight" destination="aFW-at-iT4" id="aJC-bA-zLu"/>
+                <outlet property="descriptionHeadingLabel" destination="G9c-2Y-tFU" id="VcW-OO-1dV"/>
                 <outlet property="imageSlideShow" destination="ai7-Kl-67B" id="UhY-Rj-Zo6"/>
                 <outlet property="infoBackgroundView" destination="t8Z-Dg-IJs" id="eCQ-HW-NJC"/>
                 <outlet property="lblAddDescritption" destination="j1M-02-QZ1" id="1Qx-tn-njw"/>
@@ -47,6 +48,7 @@
                 <outlet property="relatedCollectionViewHeight" destination="BtZ-YE-v8L" id="L7d-k3-8nL"/>
                 <outlet property="sexHeadingLabel" destination="Hwr-hg-ErS" id="DVn-GF-0p4"/>
                 <outlet property="sexValueLabel" destination="c7S-I8-ARG" id="VKo-JP-heg"/>
+                <outlet property="specificationHeadingLabel" destination="vfc-aI-nkD" id="2Q3-FK-UXZ"/>
                 <outlet property="totalLikesLabel" destination="fJ1-z7-2Hd" id="7tC-67-VUK"/>
                 <outlet property="userId" destination="mXE-hr-g7w" id="YPv-08-YKQ"/>
                 <outlet property="vaccineDetailsHeadingLabel" destination="Pkm-Ji-tp5" id="joI-Nj-bL8"/>
@@ -516,7 +518,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التفاصيل" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9c-2Y-tFU">
                                             <rect key="frame" x="15" y="508.33333333333331" width="384" height="25.333333333333314"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                            <color key="textColor" red="0.21960784310000001" green="0.39607843139999999" blue="0.5450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1M-02-QZ1">

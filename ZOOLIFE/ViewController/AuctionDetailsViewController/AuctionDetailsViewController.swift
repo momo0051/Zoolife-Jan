@@ -53,7 +53,8 @@ class AuctionDetailsViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var vaccineDetailsValueLabel: UILabel!
     @IBOutlet weak var passportHeadingLabel: UILabel!
     @IBOutlet weak var passportValueLabel: UILabel!
-    
+    @IBOutlet weak var specificationHeadingLabel: UILabel!
+    @IBOutlet weak var descriptionHeadingLabel: UILabel!
     //MARK:- Variable
     var imageArr:[String] = []
     var videoURl: String = ""
@@ -119,6 +120,8 @@ class AuctionDetailsViewController: UIViewController, UITableViewDelegate, UITab
                 passportHeadingLabel.textAlignment = .left
                 vaccineDetailsHeadingLabel.localizeKey = "Vaccine Details:"
                 vaccineDetailsHeadingLabel.textAlignment = .left
+                specificationHeadingLabel.localizeKey = "Specifications"
+                descriptionHeadingLabel.localizeKey = "Description"
                 UIView.appearance().semanticContentAttribute = .forceLeftToRight
             } else {
                 btnPlacebid.setTitle("إضافة مزايدة", for: .normal)
@@ -135,6 +138,8 @@ class AuctionDetailsViewController: UIViewController, UITableViewDelegate, UITab
                 passportHeadingLabel.textAlignment = .right
                 vaccineDetailsHeadingLabel.localizeKey = "بيانات التطعيم:"
                 vaccineDetailsHeadingLabel.textAlignment = .right
+                specificationHeadingLabel.localizeKey = "المواصفات"
+                descriptionHeadingLabel.localizeKey = "الوصف"
                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
             }
         } else {
@@ -516,22 +521,50 @@ class AuctionDetailsViewController: UIViewController, UITableViewDelegate, UITab
         if appLanguage == "en" {
             txtMinBid.localizeKey = "Min bid : \(auctionDetails?.minBid ?? 0)"
             userId.localizeKey = "POST ID :"
-            lblUserName.localizeKey = "Username :  \(auctionDetails?.userName ?? "")"
+            lblUserName.localizeKey = "\(auctionDetails?.userName ?? "")"
             lblUserName.textAlignment = .left
         } else {
             txtMinBid.localizeKey = "\(auctionDetails?.minBid ?? 0) : السعر الحالي"
-            userId.localizeKey = "رقم المزاد: \(auctionDetails?.id ?? 0)"
+            userId.localizeKey = "رقم المزاد: "
             lblUserName.textAlignment = .right
-            lblUserName.localizeKey = "المعلن:: \(auctionDetails?.userName ?? "")"
+            lblUserName.localizeKey = "\(auctionDetails?.userName ?? "")"
         }
         if let sex = auctionDetails?.sex{
-            self.sexValueLabel.text = sex
+            if sex.lowercased() == "female" {
+                if appLanguage == "en" {
+                    self.sexValueLabel.text = "Female"
+                }
+                else{
+                    self.sexValueLabel.text = "انثى"
+                }
+            }else{
+                if appLanguage == "en" {
+                    self.sexValueLabel.text = "Male"
+                }
+                else{
+                    self.sexValueLabel.text = "ذكر"
+                }
+            }
         }
         if let age = auctionDetails?.age{
             self.ageValueLabel.text = "\(age)"
         }
         if let passport = auctionDetails?.passport{
-            self.passportValueLabel.text = passport
+            if passport.lowercased() == "yes" {
+                if appLanguage == "en" {
+                    self.passportValueLabel.text = "Yes"
+                }
+                else{
+                    self.passportValueLabel.text = "نعم"
+                }
+            }else{
+                if appLanguage == "en" {
+                    self.passportValueLabel.text = "No"
+                }
+                else{
+                    self.passportValueLabel.text = "لا"
+                }
+            }
         }
         if let vaccineDetails = auctionDetails?.vaccine_detail{
             self.vaccineDetailsValueLabel.text = vaccineDetails

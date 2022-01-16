@@ -22,6 +22,7 @@
                 <outlet property="constraintDetailViewHeight" destination="4Ha-LV-5IY" id="osW-e7-XqO"/>
                 <outlet property="constraintRecentBiddersHeight" destination="7w0-Xk-Stb" id="TAV-vp-9EJ"/>
                 <outlet property="constraintViewButton" destination="Dob-OO-ztJ" id="TRj-mL-buD"/>
+                <outlet property="descriptionHeadingLabel" destination="9gF-07-Qjf" id="K7O-uz-BRs"/>
                 <outlet property="imageSlideShow" destination="Q4F-ns-Ktb" id="U2K-ja-oSL"/>
                 <outlet property="lblCityName" destination="bsp-HB-pju" id="KYo-j9-c6O"/>
                 <outlet property="lblDesc" destination="ZTt-ts-nvF" id="fYu-ld-5oo"/>
@@ -38,6 +39,7 @@
                 <outlet property="scrollviewBG" destination="pJg-QI-6Qh" id="Xvy-uF-Ize"/>
                 <outlet property="sexHeadingLabel" destination="3uP-KC-ChL" id="CSV-0a-s2m"/>
                 <outlet property="sexValueLabel" destination="IzZ-kF-2DO" id="0R0-dh-FBO"/>
+                <outlet property="specificationHeadingLabel" destination="24T-Nn-Z03" id="bqt-B4-W8F"/>
                 <outlet property="tableviewRecentBidders" destination="IGR-dy-MaW" id="45j-bG-zgL"/>
                 <outlet property="txtBid" destination="dBk-89-z9M" id="l2s-vw-Bub"/>
                 <outlet property="txtMinBid" destination="23t-Hg-mAK" id="PuH-Ni-mdD"/>
@@ -76,7 +78,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="375.5"/>
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ut4-LA-sG3">
-                                            <rect key="frame" x="15" y="370" width="35" height="35"/>
+                                            <rect key="frame" x="15" y="201" width="35" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="OmH-fe-psL"/>
                                                 <constraint firstAttribute="width" constant="35" id="fJw-RM-YDh"/>
