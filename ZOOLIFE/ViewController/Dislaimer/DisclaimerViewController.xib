@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DisclaimerViewController" customModule="ZOOLIFE" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAgree" destination="JJj-lW-hhJ" id="VuF-rI-Exc"/>
+                <outlet property="btnNoAgree" destination="9U5-i8-qie" id="oVP-ZH-UM9"/>
+                <outlet property="lblTitle" destination="H5U-Ey-b8L" id="2CH-PV-HSr"/>
+                <outlet property="pdfView" destination="8iq-0X-4ub" id="586-Z8-zDd"/>
+                <outlet property="view" destination="0Om-WW-ARv" id="NL4-ym-7PG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0Om-WW-ARv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3d-jM-pdB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="السياسة والشروط" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="H5U-Ey-b8L">
+                            <rect key="frame" x="140" y="33" width="134" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cUd-E3-pY4">
+                            <rect key="frame" x="0.0" y="65" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.56833261989999995" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="sLU-bL-nE7"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.050947710870000003" green="0.61902451520000001" blue="0.89023596049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="cUd-E3-pY4" firstAttribute="leading" secondItem="G3d-jM-pdB" secondAttribute="leading" id="8Rr-2m-4yr"/>
+                        <constraint firstAttribute="height" constant="66" id="Dub-Iw-y0T"/>
+                        <constraint firstItem="cUd-E3-pY4" firstAttribute="top" secondItem="H5U-Ey-b8L" secondAttribute="bottom" constant="8" id="Son-9S-zLL"/>
+                        <constraint firstAttribute="trailing" secondItem="cUd-E3-pY4" secondAttribute="trailing" id="bko-qb-woR"/>
+                        <constraint firstItem="H5U-Ey-b8L" firstAttribute="centerX" secondItem="G3d-jM-pdB" secondAttribute="centerX" id="hh6-8e-SS1"/>
+                        <constraint firstAttribute="bottom" secondItem="cUd-E3-pY4" secondAttribute="bottom" id="xbv-Cp-z8T"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iq-0X-4ub" customClass="PDFView">
+                    <rect key="frame" x="0.0" y="76" width="414" height="714"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9U5-i8-qie">
+                    <rect key="frame" x="213" y="810" width="189" height="44"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="QGo-Qd-vyT"/>
+                    </constraints>
+                    <state key="normal" title="غير موافق">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="rejectDisclaimer" destination="-1" eventType="touchUpInside" id="FFF-aX-FrW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJj-lW-hhJ">
+                    <rect key="frame" x="12" y="810" width="189" height="44"/>
+                    <color key="backgroundColor" red="0.0039215686269999999" green="0.69019607839999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="T4U-rS-jeM"/>
+                    </constraints>
+                    <state key="normal" title="موافق">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="acceptDisclaimer" destination="-1" eventType="touchUpInside" id="XqM-Ve-xJI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VIA-8D-dRE"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9U5-i8-qie" firstAttribute="top" secondItem="8iq-0X-4ub" secondAttribute="bottom" constant="20" id="4G7-f4-Qsr"/>
+                <constraint firstItem="JJj-lW-hhJ" firstAttribute="leading" secondItem="VIA-8D-dRE" secondAttribute="leading" constant="12" id="8Fm-MN-oZT"/>
+                <constraint firstItem="G3d-jM-pdB" firstAttribute="leading" secondItem="VIA-8D-dRE" secondAttribute="leading" id="Iod-gR-JBg"/>
+                <constraint firstItem="8iq-0X-4ub" firstAttribute="top" secondItem="G3d-jM-pdB" secondAttribute="bottom" constant="10" id="OtX-iz-oUn"/>
+                <constraint firstItem="JJj-lW-hhJ" firstAttribute="height" secondItem="9U5-i8-qie" secondAttribute="height" id="R1D-Gk-W9s"/>
+                <constraint firstItem="VIA-8D-dRE" firstAttribute="trailing" secondItem="8iq-0X-4ub" secondAttribute="trailing" id="TQI-hm-fqC"/>
+                <constraint firstItem="G3d-jM-pdB" firstAttribute="top" secondItem="0Om-WW-ARv" secondAttribute="top" id="YCf-IE-n0w"/>
+                <constraint firstItem="G3d-jM-pdB" firstAttribute="trailing" secondItem="VIA-8D-dRE" secondAttribute="trailing" id="eSr-R6-3DG"/>
+                <constraint firstItem="JJj-lW-hhJ" firstAttribute="width" secondItem="9U5-i8-qie" secondAttribute="width" id="hSp-yO-ymt"/>
+                <constraint firstItem="8iq-0X-4ub" firstAttribute="leading" secondItem="VIA-8D-dRE" secondAttribute="leading" id="hjt-xd-rDC"/>
+                <constraint firstItem="VIA-8D-dRE" firstAttribute="bottom" secondItem="9U5-i8-qie" secondAttribute="bottom" constant="8" id="nNe-Fd-qQz"/>
+                <constraint firstItem="VIA-8D-dRE" firstAttribute="trailing" secondItem="9U5-i8-qie" secondAttribute="trailing" constant="12" id="o6j-0e-D9I"/>
+                <constraint firstItem="8iq-0X-4ub" firstAttribute="height" relation="greaterThanOrEqual" secondItem="0Om-WW-ARv" secondAttribute="height" multiplier="0.7" id="oWU-Is-2H1"/>
+                <constraint firstItem="9U5-i8-qie" firstAttribute="leading" secondItem="JJj-lW-hhJ" secondAttribute="trailing" constant="12" id="q8n-i6-XM5"/>
+                <constraint firstItem="VIA-8D-dRE" firstAttribute="bottom" secondItem="JJj-lW-hhJ" secondAttribute="bottom" constant="8" id="vv5-se-mi8"/>
+            </constraints>
+            <point key="canvasLocation" x="-566.25" y="38.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

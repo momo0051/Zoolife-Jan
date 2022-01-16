@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="ChatCell" customModule="ZOOLIFE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HN9-Fu-YY2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="Vdo-UH-jfv">
+                                <rect key="frame" x="10" y="21" width="56" height="56"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.49803921569999998" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="3ei-3b-aQw"/>
+                                    <constraint firstAttribute="height" constant="56" id="uIH-pX-VvR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="علي" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ei8-rA-eOC">
+                                <rect key="frame" x="78" y="10" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.28235294119999998" green="0.49803921569999998" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اريد شراء هذا الكلب" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7U-75-0Gq">
+                                <rect key="frame" x="78" y="33" width="280" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.5412529707" green="0.53700077530000001" blue="0.55687040089999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before 8 hours ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-pb-4Hx">
+                                <rect key="frame" x="253" y="13.5" width="112" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="xXz-nf-iAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.5412529707" green="0.53700077530000001" blue="0.55687040089999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2oJ-Dh-VtU">
+                                <rect key="frame" x="10" y="96" width="355" height="2"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.49803921569999998" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="hqv-LR-swg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اريد شراء هذا الكلب" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwF-Qh-Kcl">
+                                <rect key="frame" x="78" y="52" width="279" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.5412529707" green="0.53700077530000001" blue="0.55687040089999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yO-b1-pKd">
+                                <rect key="frame" x="344" y="56" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.28235294119999998" green="0.49803921569999998" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ei8-rA-eOC" firstAttribute="leading" secondItem="Vdo-UH-jfv" secondAttribute="trailing" constant="12" id="5Sz-49-2J2"/>
+                            <constraint firstItem="ei8-rA-eOC" firstAttribute="top" secondItem="HN9-Fu-YY2" secondAttribute="top" constant="10" id="D5I-M3-vYx"/>
+                            <constraint firstAttribute="trailing" secondItem="TwF-Qh-Kcl" secondAttribute="trailing" constant="18" id="EeL-sv-k3p"/>
+                            <constraint firstItem="v7U-75-0Gq" firstAttribute="leading" secondItem="Vdo-UH-jfv" secondAttribute="trailing" constant="12" id="Gon-VY-TUm"/>
+                            <constraint firstItem="7yO-b1-pKd" firstAttribute="bottom" secondItem="Vdo-UH-jfv" secondAttribute="bottom" id="JtC-pk-S19"/>
+                            <constraint firstItem="Vdo-UH-jfv" firstAttribute="leading" secondItem="HN9-Fu-YY2" secondAttribute="leading" constant="10" id="dEW-J9-Hrb"/>
+                            <constraint firstItem="Vdo-UH-jfv" firstAttribute="centerY" secondItem="HN9-Fu-YY2" secondAttribute="centerY" id="eHM-Ul-Ol1"/>
+                            <constraint firstItem="Sab-pb-4Hx" firstAttribute="leading" secondItem="ei8-rA-eOC" secondAttribute="trailing" constant="8" symbolic="YES" id="ftl-2k-62p"/>
+                            <constraint firstItem="2oJ-Dh-VtU" firstAttribute="leading" secondItem="HN9-Fu-YY2" secondAttribute="leading" constant="10" id="gkS-9a-wo7"/>
+                            <constraint firstAttribute="trailing" secondItem="Sab-pb-4Hx" secondAttribute="trailing" constant="10" id="gs0-WS-sFp"/>
+                            <constraint firstItem="TwF-Qh-Kcl" firstAttribute="leading" secondItem="Vdo-UH-jfv" secondAttribute="trailing" constant="12" id="kX4-Mi-e1j"/>
+                            <constraint firstItem="TwF-Qh-Kcl" firstAttribute="top" secondItem="v7U-75-0Gq" secondAttribute="bottom" constant="2" id="mPB-l5-R1D"/>
+                            <constraint firstItem="Sab-pb-4Hx" firstAttribute="centerY" secondItem="ei8-rA-eOC" secondAttribute="centerY" id="mf1-kO-oEc"/>
+                            <constraint firstItem="7yO-b1-pKd" firstAttribute="trailing" secondItem="Sab-pb-4Hx" secondAttribute="trailing" id="njQ-Lc-IMa"/>
+                            <constraint firstItem="v7U-75-0Gq" firstAttribute="top" secondItem="ei8-rA-eOC" secondAttribute="bottom" constant="2" id="p8D-zP-gQA"/>
+                            <constraint firstAttribute="bottom" secondItem="2oJ-Dh-VtU" secondAttribute="bottom" id="rTE-SL-Zki"/>
+                            <constraint firstAttribute="trailing" secondItem="v7U-75-0Gq" secondAttribute="trailing" constant="17" id="vNT-98-05c"/>
+                            <constraint firstAttribute="trailing" secondItem="2oJ-Dh-VtU" secondAttribute="trailing" constant="10" id="xc3-8Q-k0j"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HN9-Fu-YY2" secondAttribute="trailing" id="A8P-tC-RVW"/>
+                    <constraint firstItem="HN9-Fu-YY2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="H05-mn-ErN"/>
+                    <constraint firstItem="HN9-Fu-YY2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g1l-fv-29y"/>
+                    <constraint firstAttribute="bottom" secondItem="HN9-Fu-YY2" secondAttribute="bottom" id="nKK-xM-HQ7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="adImage" destination="Vdo-UH-jfv" id="pRC-n8-FpU"/>
+                <outlet property="adTitle" destination="ei8-rA-eOC" id="xjB-pW-THw"/>
+                <outlet property="lastMessageLabel" destination="TwF-Qh-Kcl" id="S1e-yv-uSw"/>
+                <outlet property="lastMessageTime" destination="Sab-pb-4Hx" id="RCG-wx-4Td"/>
+                <outlet property="senderName" destination="v7U-75-0Gq" id="DKK-gY-bJy"/>
+                <outlet property="unreadMessage" destination="7yO-b1-pKd" id="yP6-F1-ehM"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="73.660714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_profile" width="28" height="28.5"/>
+    </resources>
+</document>

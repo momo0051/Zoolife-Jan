@@ -1,0 +1,1 @@
+ ["ic_add","ic_heart","ic_user","ic_location","shopping_bag","choice","exclamation","alert","ban","tandc","callus",,"ic_logout"]

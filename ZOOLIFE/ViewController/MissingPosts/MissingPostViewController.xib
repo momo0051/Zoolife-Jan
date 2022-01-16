@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MissingPostViewController" customModule="ZOOLIFE" customModuleProvider="target">
+            <connections>
+                <outlet property="lblCenterText" destination="2v4-6X-lfq" id="mtM-0f-eEx"/>
+                <outlet property="lblNoAds" destination="2v4-6X-lfq" id="arm-tS-ZhU"/>
+                <outlet property="lblTitle" destination="REl-Ws-MPF" id="fYA-4a-u3f"/>
+                <outlet property="tableView" destination="Ijx-lt-edK" id="pD2-e3-THn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67J-po-qsL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="بلاغ مفقود" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="REl-Ws-MPF">
+                            <rect key="frame" x="165" y="52.5" width="84.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dR-Et-YsZ">
+                            <rect key="frame" x="0.0" y="47" width="51" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="NHp-EF-Z1a"/>
+                                <constraint firstAttribute="height" constant="35" id="fuq-W8-036"/>
+                            </constraints>
+                            <state key="normal" image="ic_back_white"/>
+                            <connections>
+                                <action selector="backTapped:" destination="-1" eventType="touchUpInside" id="T8r-0S-tiC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.050947710870000003" green="0.61902451520000001" blue="0.89023596049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="1dR-Et-YsZ" firstAttribute="leading" secondItem="67J-po-qsL" secondAttribute="leading" id="4yS-Ld-I5G"/>
+                        <constraint firstAttribute="height" constant="98" id="VH4-Pt-uc9"/>
+                        <constraint firstItem="1dR-Et-YsZ" firstAttribute="top" secondItem="67J-po-qsL" secondAttribute="top" constant="47" id="jxI-Th-jT8"/>
+                        <constraint firstItem="REl-Ws-MPF" firstAttribute="centerX" secondItem="67J-po-qsL" secondAttribute="centerX" id="olj-1k-j03"/>
+                        <constraint firstItem="REl-Ws-MPF" firstAttribute="centerY" secondItem="1dR-Et-YsZ" secondAttribute="centerY" id="onY-Aq-nRT"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-lt-edK">
+                    <rect key="frame" x="0.0" y="98" width="414" height="798"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aPk-tQ-s4u"/>
+                        <outlet property="delegate" destination="-1" id="xhf-pG-WXI"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لا يوجد اعلانات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2v4-6X-lfq" userLabel="لم يتم العثور على وظيفة">
+                    <rect key="frame" x="156" y="437.5" width="102" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2v4-6X-lfq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="09v-4a-gYB"/>
+                <constraint firstAttribute="bottom" secondItem="Ijx-lt-edK" secondAttribute="bottom" id="3C6-jR-C4i"/>
+                <constraint firstItem="Ijx-lt-edK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BDT-Ne-NS1"/>
+                <constraint firstItem="67J-po-qsL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cds-V9-mwc"/>
+                <constraint firstItem="Ijx-lt-edK" firstAttribute="top" secondItem="67J-po-qsL" secondAttribute="bottom" id="MJk-hQ-TAm"/>
+                <constraint firstItem="2v4-6X-lfq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="R1T-5J-Jgt"/>
+                <constraint firstItem="Ijx-lt-edK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XvV-2F-xt8"/>
+                <constraint firstItem="67J-po-qsL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eCD-Nv-XtF"/>
+                <constraint firstItem="67J-po-qsL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="uAC-uA-4mo"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_white" width="16.5" height="16.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

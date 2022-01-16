@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Dro-eB-cA5" userLabel="First Search Cell" customClass="SearchCell" customModule="ZOOLIFE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlG-s3-qdg">
+                        <rect key="frame" x="1" y="1" width="530" height="298"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="dogs" translatesAutoresizingMaskIntoConstraints="NO" id="xAf-OX-Eab">
+                                <rect key="frame" x="10" y="10" width="510" height="178"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="كلب لطيف" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="REE-kq-RHm">
+                                <rect key="frame" x="10" y="248" width="510" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9E3-Nk-MUY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 يناير 2020 ، 09:15 مساءً" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1A9-cX-HXB">
+                                <rect key="frame" x="10" y="218" width="510" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="qU9-I5-s89"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.54509109259999999" green="0.54509443040000005" blue="0.54510313269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xAf-OX-Eab" secondAttribute="trailing" constant="10" id="APG-US-vuo"/>
+                            <constraint firstItem="1A9-cX-HXB" firstAttribute="top" secondItem="xAf-OX-Eab" secondAttribute="bottom" constant="30" id="BSm-He-gCL"/>
+                            <constraint firstItem="xAf-OX-Eab" firstAttribute="leading" secondItem="OlG-s3-qdg" secondAttribute="leading" constant="10" id="H8d-23-xe6"/>
+                            <constraint firstAttribute="trailing" secondItem="1A9-cX-HXB" secondAttribute="trailing" constant="10" id="Ktf-zr-GHu"/>
+                            <constraint firstAttribute="bottom" secondItem="REE-kq-RHm" secondAttribute="bottom" constant="10" id="NXK-9O-KYI"/>
+                            <constraint firstItem="REE-kq-RHm" firstAttribute="top" secondItem="1A9-cX-HXB" secondAttribute="bottom" constant="10" id="PXM-Wa-JXU"/>
+                            <constraint firstItem="1A9-cX-HXB" firstAttribute="leading" secondItem="OlG-s3-qdg" secondAttribute="leading" constant="10" id="V4P-sl-Ezz"/>
+                            <constraint firstItem="xAf-OX-Eab" firstAttribute="top" secondItem="OlG-s3-qdg" secondAttribute="top" constant="10" id="i8U-UC-Hhu"/>
+                            <constraint firstItem="REE-kq-RHm" firstAttribute="leading" secondItem="OlG-s3-qdg" secondAttribute="leading" constant="10" id="jck-cL-PrB"/>
+                            <constraint firstAttribute="trailing" secondItem="REE-kq-RHm" secondAttribute="trailing" constant="10" id="vAD-SE-uJd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="liy-h6-QQ7"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OlG-s3-qdg" secondAttribute="bottom" constant="1" id="0WC-h4-0zc"/>
+                <constraint firstAttribute="trailing" secondItem="OlG-s3-qdg" secondAttribute="trailing" constant="1" id="2xk-Le-9nO"/>
+                <constraint firstItem="OlG-s3-qdg" firstAttribute="top" secondItem="Dro-eB-cA5" secondAttribute="top" constant="1" id="YHM-nI-0aD"/>
+                <constraint firstItem="OlG-s3-qdg" firstAttribute="leading" secondItem="Dro-eB-cA5" secondAttribute="leading" constant="1" id="eGi-Bs-qgc"/>
+            </constraints>
+            <size key="customSize" width="540" height="326"/>
+            <connections>
+                <outlet property="articlePostedDate" destination="1A9-cX-HXB" id="JmR-7m-lFa"/>
+                <outlet property="articleTitle" destination="REE-kq-RHm" id="fLj-MI-3iW"/>
+                <outlet property="image1" destination="xAf-OX-Eab" id="wvK-L6-xsY"/>
+            </connections>
+            <point key="canvasLocation" x="-750.72463768115949" y="92.745535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dogs" width="85" height="92.5"/>
+    </resources>
+</document>

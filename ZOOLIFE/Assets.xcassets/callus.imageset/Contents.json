@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Icon awesome-phone-alt@3x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

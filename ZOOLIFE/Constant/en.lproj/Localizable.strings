@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  ZOOLIFE
+
+  Created by Dipak Chhag on 04/03/21.
+  Copyright © 2021 Hafiz Anser. All rights reserved.
+*/
+
+"يرجى اختيار الفئة"="PLease select category";
+"مرحبا بعودتك" = "Welcome back!";
+"نحن سعداء أن نراكم مرة أخرى" = "We are happy to see you again!";
+"من فضلك ، دعنا نسجل الدخول أولا" = "Please, let's log in first!";
+"رقم الهاتف" = "Your Phone Number:";
+"كلمة المرور" = "Password:";
+"هل نسيت كلمة المرور" = "Forgot Password?";
+"تسجيل الدخول" = "LOGIN";
+"إذا لم يكن لديك حساب قم بالتسجيل" = "Do not have account yet? No worries, let's sign up";
+"أهلا"= "Hi there!";
+"يسعدنا أن نرى أنك تريد الانضمام إلينا"="We are happy to see you want to join us!";
+"من فضلك ، دعنا نشترك أولا"="Please, let's sign up first!";
+"تأكيد كلمة المرور"="Confirm Password";
+"إذا كان لديك حساب تسجيل الدخول"="You already have account? Great, let's log in";
+"انشاء حساب"="NEXT";
+"هل نسيت كلمة المرور"="Reset Password";
+"نرى أنك نسيت كلمة المرور الخاصة بك"="We see you forgot your password.";
+"لا مشكلة ، سنرسل لك رابطًا حتى تتمكن من إعادة تعيينه"="No problem, we will send you link so you can reset it!";
+"إعادة تعيين كلمة المرور"="SEND";
+"لقد أرسلنا لك رمز وصول عبر الرسائل القصيرة للتحقق من رقم الهاتف المحمول"="We have sent a confirmation number to your e-mail!";
+"أدخل رمز هنا"="Please enter verification number we sent!";
+;"Didn't receive e-mail? No problem, send it again"="إرسال"
+" والمستشارين ليقدموا افضل النصائح والاستشارات ويضم زوولايف عروض وفعاليات ترفيهيه في عالم الحيوان."="If you have any question, we would be happy to answer it!";
+"الاعلانات"="Carolyn Elliot";
+"الشكاوي والاقتراحات"="Eugene Oliver";
+"اتصل بنا"="Contact Us";
+
+"اضافة اعلان"="Add Post";
+"اكتشف"="Explore";
+
+
+"الرئيسية"="Home";
+"بحث"="Search";
+"اشعارات"="Notification";
+"الرسائل"="Chat";
+"المزيد"="Setting";
+"إلغاء"="NO";
+"حسنا"="Yes";
+"هل تريد تسجيل الخروج ؟" = "Do you want to log out?";
+"يجب عليك تسجيل الدخول"="Please do login first";
+
+"تم الابلاغ عن الاعلان مسبقا"="The announcement was previously reported.";
+"هل أنت متأكد أنك تريد حذف هذه الإضافة"="Are you sure you want to delete this extension?";
+"اختر صورة من المعرض"="Choose a picture from the gallery";
+"التقاط صورة"="Camera";
+"اعلانات مشابهة"="Similer Ads";
+"خطأ!"="Error";
+"الرجاء تحديد الفئة"="PLease select category";
+"الرجاء إدخال النص للعثور على الوظائف"="Please enter text to find jobs";
+"من فضلك أدخل رقمك السري"="Please enter your password.";
+"الرجاء ادخال رقم الهاتف"="Please enter your phone number";
+"ادخل اسم المستخدم"="Enter Username";
+"الرجاء إدخال رقم هاتفك على الأقل 9 أرقام حساب مسجل"="Please enter your phone number at least 9 registered account numbers";
+"الرجاء إدخال رقم الهاتف أو اسم المستخدم"="Please enter a phone number or username";
+"الآن يمكنك تغيير كلمة المرور الخاصة بك"="Now you can change your password.";
+"تم انشاء الحساب بنجاح"="Account successfully created";
+"يرجى التأكد من أن كلمة المرور الجديدة أو إعادة التحقق من كلمة المرور الجديدة يجب أن تكون هي نفسها"="Please make sure that the new password or re-verify the new password must be the same.";
+"الرجاء إدخال كلمة المرور الجديدة المؤكدة"="Please enter the new confirmed password";
+"اسم االمستخدم"="User Name";
+"اختيار موقع"="Choose a site";
+
+"يرجى اختيار عنوان الاعلان"="Please select the title of the ad";
+"يرجى اختيار وصف الاعلان"="Please enter the ad description.";
+"يرجى اختيار المدينة"="Select the city";

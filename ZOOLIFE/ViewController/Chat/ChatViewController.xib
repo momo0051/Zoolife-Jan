@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="ZOOLIFE" customModuleProvider="target">
+            <connections>
+                <outlet property="headerLabel" destination="soQ-vj-OqH" id="Iak-Kf-EQW"/>
+                <outlet property="lblTitle" destination="soQ-vj-OqH" id="cM2-dr-pa6"/>
+                <outlet property="messagesLoading" destination="4Bu-UD-jQG" id="JRL-6K-wcc"/>
+                <outlet property="navigationHeader" destination="TRk-WO-bP9" id="ahw-vm-q1L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRk-WO-bP9">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المحادثات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-vj-OqH">
+                            <rect key="frame" x="162.5" y="60" width="89.5" height="25.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <color key="textColor" red="0.28235294119999998" green="0.49803921569999998" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGS-C3-3iB">
+                            <rect key="frame" x="15" y="55.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="6TS-La-2Yn"/>
+                                <constraint firstAttribute="width" constant="35" id="TrX-Xz-ccz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" image="ic_back_new"/>
+                            <connections>
+                                <action selector="backBtn" destination="-1" eventType="touchUpInside" id="MEo-1O-wgx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="soQ-vj-OqH" firstAttribute="centerX" secondItem="TRk-WO-bP9" secondAttribute="centerX" id="77D-eM-bSh"/>
+                        <constraint firstItem="soQ-vj-OqH" firstAttribute="top" secondItem="TRk-WO-bP9" secondAttribute="top" constant="60" id="Gqz-0h-9ol"/>
+                        <constraint firstItem="XGS-C3-3iB" firstAttribute="centerY" secondItem="soQ-vj-OqH" secondAttribute="centerY" id="XQb-OR-BvJ"/>
+                        <constraint firstItem="XGS-C3-3iB" firstAttribute="leading" secondItem="TRk-WO-bP9" secondAttribute="leading" constant="15" id="kRX-Ff-sRF"/>
+                        <constraint firstAttribute="height" constant="96" id="yzL-ud-Ujs"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="4Bu-UD-jQG">
+                    <rect key="frame" x="197" y="108" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4Bu-UD-jQG" firstAttribute="top" secondItem="TRk-WO-bP9" secondAttribute="bottom" constant="12" id="7Eb-cv-cTM"/>
+                <constraint firstItem="4Bu-UD-jQG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="7SU-Bk-Rgi"/>
+                <constraint firstItem="TRk-WO-bP9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Hnn-o3-Zod"/>
+                <constraint firstItem="TRk-WO-bP9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="e8t-pZ-dw1"/>
+                <constraint firstItem="TRk-WO-bP9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xlN-JE-1rB"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="119"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_new" width="41" height="41"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
