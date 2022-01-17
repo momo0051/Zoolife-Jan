@@ -508,7 +508,7 @@ class AdDetailViewController: UIViewController {
            // lblUserNames.localizeKey = "Username : \(post?.username ?? "")"
         } else {
             lblSimilarTitle.localizeKey = "اعلانات مشابهة:"
-            userId.localizeKey = "رقم المزاد: "
+            userId.localizeKey = "رقم الاعلان: "
             sexHeadingLabel.localizeKey = "الجنس:"
             sexHeadingLabel.textAlignment = .right
             ageHeadingLabel.localizeKey = "العمر:"
