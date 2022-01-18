@@ -121,7 +121,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
           let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
           let adView = nibObjects.first as? GADNativeAdView
         else {
-          assert(false, "Could not load nib file for adView")
+     //     assert(false, "Could not load nib file for adView")
             return        }
         setAdView(adView)
         refreshAd(nil)

@@ -406,8 +406,8 @@ class AuctionListViewController: UIViewController, UITextFieldDelegate, UICollec
           let nibObjects = Bundle.main.loadNibNamed("NativeAdView", owner: nil, options: nil),
           let adView = nibObjects.first as? GADNativeAdView
         else {
-          assert(false, "Could not load nib file for adView")
-            return}
+            return
+        }
         setAdView(adView)
         refreshAd(nil)
     }
